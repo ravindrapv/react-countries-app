@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import DarkModeToggle from "./DarkModeToggle";
 import Loading from "./Loading";
+import Header from "./Header";
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -51,7 +51,7 @@ const Countries = () => {
 
   return (
     <div className="container mx-auto max-w-screen-xl">
-      <DarkModeToggle />
+      <Header />
       <div className="flex flex-wrap justify-between items-center my-8">
         <div className="flex items-center">
           <input
